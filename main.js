@@ -99,17 +99,24 @@ mainElement.append(kata7heading)
 mainElement.append(kata7Answer)
 kata7heading.append('kata 7')
 
-for (counter7 = 20; counter7 > 0; counter7 -= 2) {
-     kata7Answer.append(counter7 + ',')
+for (index = 20; index > 0; index -= 2) {
+     kata7Answer.append(index + ',')
 }
 
 
 // 8 Display the odd numbers from 20 to 1, counting backwards. (19, 17, 15, …, 3, 1)
-// const kata8heading = document.createElement ('h1')
-// const kata8Answer = document.createElement('div')
-// mainElement.append(kata8heading) 
-// mainElement.append(kata8Answer)
-// kata8heading.append('kata 8')
+const kata8heading = document.createElement ('h1')
+const kata8Answer = document.createElement('div')
+mainElement.append(kata8heading) 
+mainElement.append(kata8Answer)
+kata8heading.append('kata 8')
+
+for (index = 19; index >= 0; index -= 2) {
+    kata8Answer.append(index + ',')
+
+}
+
+
 
 // 9 Display the multiples of 5, counting down from 100 to 1. (100, 95, 90, …, 10, 5)
 // const kata9heading = document.createElement ('h1')
