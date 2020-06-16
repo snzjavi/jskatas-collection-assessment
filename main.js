@@ -93,11 +93,16 @@ for (counter6 = 20; counter6 > 0; counter6 -= 1) {
 }
 
 // 7 Display the even numbers counting backwards from 20 to 1. (20, 18, 16, …, 4, 2)
-// const kata7heading = document.createElement ('h1')
-// const kata7Answer = document.createElement('div')
-// mainElement.append(kata7heading) 
-// mainElement.append(kata7Answer)
-// kata7heading.append('kata 7')
+const kata7heading = document.createElement ('h1')
+const kata7Answer = document.createElement('div')
+mainElement.append(kata7heading) 
+mainElement.append(kata7Answer)
+kata7heading.append('kata 7')
+
+for (counter7 = 20; counter7 > 0; counter7 -= 2) {
+     kata7Answer.append(counter7 + ',')
+}
+
 
 // 8 Display the odd numbers from 20 to 1, counting backwards. (19, 17, 15, …, 3, 1)
 // const kata8heading = document.createElement ('h1')
