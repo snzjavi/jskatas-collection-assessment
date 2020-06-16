@@ -71,7 +71,7 @@ for (let counter5 = 1; counter5 <= 100; counter5 += 1){
 
     if(Square){ 
         kata5Answer.append(counter5 + ',')
-        console.log(counter5)
+    
 
     }
 
@@ -127,13 +127,23 @@ kata9heading.append('kata 9')
     kata9Answer.append(index + ', ')
 }
 
-
 // 10 Display the square numbers, counting down from 100. (100, 81, 64, …, 4, 1)
 const kata10heading = document.createElement ('h1')
 const kata10Answer = document.createElement('div')
 mainElement.append(kata10heading) 
 mainElement.append(kata10Answer)
 kata10heading.append('kata 10')
+
+for (let counter10 = 100; counter10 >= 1; counter10 -= 1){
+    const Square = Number.isInteger(Math.sqrt(counter10))
+
+    if(Square){ 
+        kata10Answer.append(counter10 + ',')
+    
+
+    }
+
+}
 
 // 11 Display the 20 elements of sampleArray. (469, 755, 244, …, 940, 472)
 
