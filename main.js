@@ -29,7 +29,6 @@ kata2heading.append('kata 2')
 
 for (let counter2 = 2; counter2 <= 20; counter2 += 2) {
     kata2Answer.append(counter2 + ',')
-    console.log(counter2)
 }
 
 
@@ -44,7 +43,6 @@ kata3heading.append('kata 3')
 let counter3 = 1
 while (counter3 <= 20) {
     kata3Answer.append(counter3 + ',')
-    console.log(counter3)
     counter3 += 2
 } 
 
@@ -57,7 +55,6 @@ mainElement.append(kata4Answer)
 kata4heading.append('kata 4')
 
 for (let counter4 = 5; counter4 <= 100; counter4 += 5 ){
-    console.log(counter4)
     kata4Answer.append(counter4 + ', ')
 }
 
@@ -119,18 +116,24 @@ for (index = 19; index >= 0; index -= 2) {
 
 
 // 9 Display the multiples of 5, counting down from 100 to 1. (100, 95, 90, …, 10, 5)
-// const kata9heading = document.createElement ('h1')
-// const kata9Answer = document.createElement('div')
-// mainElement.append(kata9heading) 
-// mainElement.append(kata9Answer)
-// kata9heading.append('kata 9')
+const kata9heading = document.createElement ('h1')
+const kata9Answer = document.createElement('div')
+mainElement.append(kata9heading) 
+mainElement.append(kata9Answer)
+kata9heading.append('kata 9')
+
+ for (let index = 100; index >= 5; index -= 5 ){
+    console.log(index)
+    kata9Answer.append(index + ', ')
+}
+
 
 // 10 Display the square numbers, counting down from 100. (100, 81, 64, …, 4, 1)
-// const kata10heading = document.createElement ('h1')
-// const kata10Answer = document.createElement('div')
-// mainElement.append(kata10heading) 
-// mainElement.append(kata10Answer)
-// kata10heading.append('kata 10')
+const kata10heading = document.createElement ('h1')
+const kata10Answer = document.createElement('div')
+mainElement.append(kata10heading) 
+mainElement.append(kata10Answer)
+kata10heading.append('kata 10')
 
 // 11 Display the 20 elements of sampleArray. (469, 755, 244, …, 940, 472)
 
