@@ -139,11 +139,14 @@ for (let counter10 = 100; counter10 >= 1; counter10 -= 1){
 
     if(Square){ 
         kata10Answer.append(counter10 + ',')
-    
 
     }
 
 }
+
+
+// const sampleArray = [
+//     469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472, ];
 
 // 11 Display the 20 elements of sampleArray. (469, 755, 244, …, 940, 472)
 
@@ -159,32 +162,32 @@ for (index = 0; index < sampleArray.length; index += 1) {
 
 // 12 Display all the even numbers contained in sampleArray. (244, 758, 450, …, 940, 472)
 
-// const kata12heading = document.createElement ('h1')
-// const kata12Answer = document.createElement('div')
-// mainElement.append(kata12heading)
-// mainElement.append(kata12Answer)
-// kata12heading.append('kata 12')
+const kata12heading = document.createElement ('h1')
+const kata12Answer = document.createElement('div')
+mainElement.append(kata12heading)
+mainElement.append(kata12Answer)
+kata12heading.append('kata 12')
 
-// for (let index = 0; index < sampleArray.length; index += 1) {
-//     if ((sampleArray[index] % 2) ! = 1) {
-//         kata12Answer.append(sampleArray[index] + ',')
-//     } 
-// }
+for (let index = 0; index < sampleArray.length; index += 1) {
+    if (sampleArray[index] % 2 === 0) {
+        kata12Answer.append(sampleArray[index] + ',')
+    }
+}
 
 // 13 Display all the odd numbers contained in sampleArray. (469, 755, 245, …, 179, 535)
 
-// const kata13heading = document.createElement ('h1')
-// const kata13Answer = document.createElement('div')
-// mainElement.append(kata13heading)
-// mainElement.append(kata13Answer)
-// kata13heading.append('kata 13')
+const kata13heading = document.createElement ('h1')
+const kata13Answer = document.createElement('div')
+mainElement.append(kata13heading)
+mainElement.append(kata13Answer)
+kata13heading.append('kata 13')
 
-// for (let index = 0; index < sampleArray.length; index += 1) {
-//     for (let index = 0; index < sampleArray.length; index += 1) {
-//         if ((sampleArray[index] % 2) ! = 0) {
-//             kata13Answer.append(sampleArray[index] + ',')
-//         } 
-//     }
+
+for (let index = 0; index < sampleArray.length; index += 1) {
+    if (sampleArray[index] % 2 === 1) {
+        kata13Answer.append(sampleArray[index] + ',')
+    } 
+}
     
 // 14 Display the square of each element in sampleArray. (219961, 570025, …, 222784)
 const kata14heading = document.createElement ('h1')
