@@ -145,9 +145,6 @@ for (let counter10 = 100; counter10 >= 1; counter10 -= 1){
 }
 
 
-// const sampleArray = [
-//     469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472, ];
-
 // 11 Display the 20 elements of sampleArray. (469, 755, 244, …, 940, 472)
 
 const kata11heading = document.createElement ('h1')
@@ -243,19 +240,35 @@ mainElement.append(kata17heading)
 mainElement.append(kata17Answer)
 kata17heading.append('kata 17')
 
-// 18 Display the largest element in sampleArray.99
+
+sampleArray.min = function( sampleArray ){
+    return Math.min.apply( Math, sampleArray );
+};
+
+let smallestElement = sampleArray.min(sampleArray);
+
+kata17Answer.append(smallestElement)
+
+// 18 Display the largest element in sampleArray
 const kata18heading = document.createElement ('h1')
 const kata18Answer = document.createElement('div')
 mainElement.append(kata18heading)
 mainElement.append(kata18Answer)
 kata18heading.append('kata 18')
 
+sampleArray.max = function( sampleArray ){
+    return Math.max.apply( Math, sampleArray );
+};
+
+let largestElement = sampleArray.max(sampleArray);
+
+kata18Answer.append(largestElement)
+
 
 // Optional Bonus
 // 19 Display 20 solid gray rectangles, each 20px high and 100px wide.
-// const kata1keading = document.createElement ('h1')
-// mainElement.append(kata1heading)
-// kata1heading.append('kata 1')
+
+
 // 20 Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px (remember #4, above).
 // 21 Display 20 solid gray rectangles, each 20px high, with widths in pixels given by the 20 elements of sampleArray.
 // 22 As in #21, but alternate colors so that every other rectangle is red.
