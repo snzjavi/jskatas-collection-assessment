@@ -44,7 +44,7 @@ let counter3 = 1
 while (counter3 <= 20) {
     kata3Answer.append(counter3 + ',')
     counter3 += 2
-} 
+}
 
 // 4 Display the multiples of 5 up to 100. (5, 10, 15, …, 95, 100)
 
@@ -69,7 +69,7 @@ kata5heading.append('kata 5')
 for (let counter5 = 1; counter5 <= 100; counter5 += 1){
     const Square = Number.isInteger(Math.sqrt(counter5))
 
-    if(Square){ 
+    if(Square){
         kata5Answer.append(counter5 + ',')
     
 
@@ -137,7 +137,7 @@ kata10heading.append('kata 10')
 for (let counter10 = 100; counter10 >= 1; counter10 -= 1){
     const Square = Number.isInteger(Math.sqrt(counter10))
 
-    if(Square){ 
+    if(Square){
         kata10Answer.append(counter10 + ',')
 
     }
@@ -204,16 +204,51 @@ for (let index = 0; index < sampleArray.length; index += 1){
 }
 
 // 15 Display the sum of all the numbers from 1 to 20.
+const kata15heading = document.createElement ('h1')
+const kata15Answer = document.createElement('div')
+mainElement.append(kata15heading)
+mainElement.append(kata15Answer)
+kata15heading.append('kata 15')
+
+sum15 = 0
+for (let index = 0; index <= 20; index += 1) {
+    sum15 += index
+}
+
+kata15Answer.append(sum15)
 
 
 // 16 Display the sum of all the elements in sampleArray.
+const kata16heading = document.createElement ('h1')
+const kata16Answer = document.createElement('div')
+mainElement.append(kata16heading)
+mainElement.append(kata16Answer)
+kata16heading.append('kata 16')
+
+let sum = 0
+for (let index = 0; index < sampleArray.length; index++) {
+    
+    sum += sampleArray[index]
+    
+    
+}
+kata16Answer.append(sum)
+console.log(sum);
 
 
 // 17 Display the smallest element in sampleArray.
-
+const kata17heading = document.createElement ('h1')
+const kata17Answer = document.createElement('div')
+mainElement.append(kata17heading)
+mainElement.append(kata17Answer)
+kata17heading.append('kata 17')
 
 // 18 Display the largest element in sampleArray.99
-
+const kata18heading = document.createElement ('h1')
+const kata18Answer = document.createElement('div')
+mainElement.append(kata18heading)
+mainElement.append(kata18Answer)
+kata18heading.append('kata 18')
 
 
 // Optional Bonus
